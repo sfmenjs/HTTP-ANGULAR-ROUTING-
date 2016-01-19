@@ -1,0 +1,18 @@
+<div layout="row" layout-wrap layout-fill>
+  <div flex="25" flex-md="50" flex-sm="100" layout="column" ng-repeat="a in vm.animals" layout-fill>
+    <md-card layout-padding class="card">
+      <div class="delete-text" ng-click="vm.deleteAnimal($index)">&times;</div>
+      <div>
+        <img ng-src="{{a.imageUrl}}" ng-alt="{{a.name}}" />
+      </div>
+      <div layout>
+        <div layout="column" style="margin: auto;">
+          <span><i>Name: </i>{{a.name}}</span>
+          <span><i>Species: </i>{{a.species}}</span>
+        </div>
+        <span flex></span>
+        <md-button class="md-raised md-primary" ui-sref="EditAnimal({dolphin: a._id})">Edit</md-button>
+      </div>
+    </md-card>
+  </div>
+</div>

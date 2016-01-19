@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+	<title>coder-camps-js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Angular Material CSS now available via Google CDN; version 0.11.2 used here -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+
+<body>
+	<md-toolbar id="navbar" layout style="box-shadow: 1px 1px 3px 1px grey;">
+		<span flex="5"></span>
+		<h3>The App Works!</h3>
+		<span flex></span>
+		<md-button class="md-raised button-uisref" ui-sref="Home">Home</md-button>
+		<md-button class="md-raised button-uisref" ui-sref="Create">Create</md-button>
+		<span flex="5"></span>
+	</md-toolbar>
+	<md-content>
+		<ui-view layout="column" layout-fill layout-padding></ui-view>
+	</md-content>
+	<!-- External Libs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.js"></script>
+	<!-- Module(s) -->
+	<script src="/javascript/app.js"></script>
+	<!-- Services -->
+	<script src="/javascript/services/AnimalFactory.js"></script>
+	<!-- Controllers -->
+	<script src="/javascript/controllers/HomeController.js"></script>
+	<script src="/javascript/controllers/CreateController.js"></script>
+	<script src="/javascript/controllers/EditAnimalController.js"></script>
+</body>
+
+</html>

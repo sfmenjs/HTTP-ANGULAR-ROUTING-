@@ -1,0 +1,24 @@
+<md-card class="card">
+  <form layout-padding ng-submit="vm.createAnimal();">
+    <div layout layout-align="center">
+      <h1>Create a new Animal</h1>
+    </div>
+    <md-input-container>
+      <label>Animal Name</label>
+      <input type="text" ng-model="vm.animal.name" />
+    </md-input-container>
+    <md-input-container>
+      <label>Animal Species</label>
+      <input type="text" ng-model="vm.animal.species" />
+    </md-input-container>
+    <md-input-container>
+      <label>Image URL</label>
+      <input type="text" ng-model="vm.animal.imageUrl" />
+    </md-input-container>
+    <div layout>
+      <span flex></span>
+      <md-button type="submit" class="md-raised md-primary" ng-disabled="vm.isDisabled">Submit</md-button>
+      <span flex></span>
+    </div>
+  </form>
+</md-card>
